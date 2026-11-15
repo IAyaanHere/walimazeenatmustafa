@@ -178,7 +178,7 @@ export function renderInvitation(config) {
               <article class="timeline__item">
                 <div class="timeline__marker"><span>${String(index + 1).padStart(2, "0")}</span></div>
                 <div class="timeline__content">
-                  <time>${escapeHtml(item.time)}</time>
+                  ${item.time ? `<time>${escapeHtml(item.time)}</time>` : ""}
                   <h3>${escapeHtml(item.title)}</h3>
                   <p>${escapeHtml(item.detail)}</p>
                 </div>

@@ -6,7 +6,7 @@
   --gold: #d5b875;
   --gold-deep: #aa8742;
   --ink: #17312c;
-  --muted: #6b746f;
+  --muted: #2a3c36;
   --font-arabic: "Noto Naskh Arabic", serif;
   --font-names: "Great Vibes", serif;
   --font-display: "Noto Serif Display", serif;
@@ -188,12 +188,12 @@ img, video { display: block; max-width: 100%; }
   margin: 3px 0;
 
   font-family: var(--font-display);
-  font-size: clamp(12px, 2vw, 14px);
+  font-size: clamp(13px, 2.8vw, 16px);
   line-height: 1.55;
-  letter-spacing: .03em;
+  letter-spacing: .02em;
+  font-weight: 600;
 
-  color: var(--emerald-deep);
-  text-shadow: 0 2px 16px rgba(0, 0, 0, .4);
+  color: #071c17;
 }
 .hero__names {
   margin: 0;
@@ -230,14 +230,13 @@ img, video { display: block; max-width: 100%; }
   margin-top: 9px;
 
   font-family: var(--font-body);
-  font-size: clamp(10px, 1.7vw, 13px);
-  font-weight: 500;
+  font-size: clamp(11px, 2.2vw, 14px);
+  font-weight: 700;
   line-height: 1.5;
-  letter-spacing: .08em;
+  letter-spacing: .1em;
   text-transform: uppercase;
 
-  color: var(--emerald-deep);
-  text-shadow: 0 2px 14px rgba(0, 0, 0, .4);
+  color: #071c17;
 }
 
 .hero__ampersand {
@@ -245,23 +244,23 @@ img, video { display: block; max-width: 100%; }
   margin: 15px 0;
 
   font-family: var(--font-display);
-  font-size: clamp(25px, 5vw, 40px);
-  font-weight: 400;
+  font-size: clamp(26px, 5vw, 42px);
+  font-weight: 600;
   font-style: italic;
   line-height: 1;
 
-  color: var(--emerald-deep);
+  color: #071c17;
 }
 .hero__closing-line {
   max-width: 580px;
   margin: 30px auto 0;
 
   font-family: var(--font-display);
-  font-size: clamp(12px, 2vw, 14px);
+  font-size: clamp(13px, 2.8vw, 16px);
+  font-weight: 600;
   line-height: 1.65;
 
-  color: var(--emerald-deep);
-  text-shadow: 0 2px 16px rgba(0, 0, 0, .4);
+  color: #071c17;
 }
 .hero__bismillah { margin-bottom: 14px; }
 .hero__intro { margin-bottom: 20px; }
@@ -277,7 +276,7 @@ img, video { display: block; max-width: 100%; }
 .section__inner--narrow { width: min(760px, 100%); }
 h2 { margin: 0; font-family: var(--font-display); font-size: clamp(38px, 7vw, 72px); font-weight: 400; line-height: 1.05; letter-spacing: -.035em; }
 h3 { font-family: var(--font-display); font-size: clamp(24px, 4vw, 34px); font-weight: 400; }
-.lead { font-family: var(--font-display); font-size: clamp(20px, 3vw, 27px); line-height: 1.75; color: #52615c; }
+.lead { font-family: var(--font-display); font-size: clamp(20px, 3vw, 27px); line-height: 1.75; color: #17312c; font-weight: 500; }
 .welcome { min-height: 80vh; display: grid; place-items: center; background: var(--ivory); }
 .flourish { display: flex; justify-content: center; align-items: center; gap: 16px; color: var(--gold-deep); margin-top: 44px; }
 .flourish span { width: 70px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); }
@@ -325,9 +324,9 @@ h3 { font-family: var(--font-display); font-size: clamp(24px, 4vw, 34px); font-w
 .timeline__item:not(:last-child)::before { content:""; position:absolute; left:42px; top:48px; bottom:-4px; width:1px; background:linear-gradient(var(--gold), rgba(213,184,117,.1)); }
 .timeline__marker { position:relative; z-index:2; width:86px; }
 .timeline__marker span { display:grid; place-items:center; width:52px; height:52px; margin:auto; border-radius:50%; background:var(--emerald); color:var(--gold); font-family:var(--font-display); box-shadow:0 10px 30px rgba(18,63,53,.18); }
-.timeline__content time { color:var(--gold-deep); text-transform:uppercase; letter-spacing:.22em; font-size:10px; font-weight:800; }
-.timeline__content h3 { margin:6px 0 2px; }
-.timeline__content p { margin:0; color:var(--muted); }
+.timeline__content time { display:block; color:var(--gold-deep); text-transform:uppercase; letter-spacing:.22em; font-size:11px; font-weight:800; margin-bottom:2px; }
+.timeline__content h3 { margin:0 0 4px; color:#0b211b; font-weight:600; }
+.timeline__content p { margin:0; color:#233a34; font-size:15px; font-weight:500; }
 
 .venue-section { padding:0; background:var(--emerald-deep); }
 .venue-card { min-height:82vh; position:relative; display:grid; place-items:center; padding:90px 22px; color:var(--ivory); overflow:hidden; }
@@ -542,17 +541,19 @@ h3 { font-family: var(--font-display); font-size: clamp(24px, 4vw, 34px); font-w
   }
 
   .hero__intro p {
-    font-size: 10px;
-    line-height: 1.4;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.45;
   }
 
   .hero__name {
-    font-size: clamp(38px, 8vw, 58px);
+    font-size: clamp(40px, 9vw, 62px);
   }
 
   .hero__parents {
     margin-top: 6px;
-    font-size: 9px;
+    font-size: 11px;
+    font-weight: 700;
   }
 
   .hero__ampersand {
@@ -561,7 +562,8 @@ h3 { font-family: var(--font-display); font-size: clamp(24px, 4vw, 34px); font-w
 
   .hero__closing-line {
     margin-top: 18px;
-    font-size: 10px;
+    font-size: 13px;
+    font-weight: 600;
   }
 }
 

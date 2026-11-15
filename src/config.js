@@ -134,9 +134,9 @@ couple: {
 
   program: [
     { time: "7:30 PM", title: "Guest arrival", detail: "Welcome drinks & refreshments" },
-    { time: "8:30 PM", title: "Walima reception", detail: "Greetings and photographs with the couple" },
-    { time: "9:30 PM", title: "Celebratory feast", detail: "Dinner is served" },
-    { time: "11:30 PM", title: "Farewell & duas", detail: "With warm memories and gratitude" },
+    { time: "", title: "Walima reception", detail: "Greetings and photographs with the couple" },
+    { time: "", title: "Celebratory feast", detail: "Dinner is served" },
+    { time: "", title: "Farewell & duas", detail: "With warm memories and gratitude" },
   ],
 
   rsvp: {
@@ -158,7 +158,7 @@ couple: {
   sections: {
     welcome: true,
     scratchReveal: true,
-    gallery: true,
+    gallery: false,
     countdown: true,
     timeline: true,
     venue: true,
