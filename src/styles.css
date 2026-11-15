@@ -428,6 +428,29 @@ h3 { font-family: var(--font-display); font-size: clamp(24px, 4vw, 34px); font-w
 .closing__names { margin-top:44px; font-family:var(--font-display); font-size:clamp(30px,7vw,58px); }
 .closing__names span { color:var(--gold); font-style:italic; }
 .closing time { display:block; margin-top:12px; color:var(--gold); text-transform:uppercase; letter-spacing:.18em; font-size:11px; }
+
+.closing__regards {
+  margin: 30px auto 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  background: rgba(5, 36, 30, 0.75);
+  border: 1px solid rgba(213, 184, 117, 0.55);
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 0 25px rgba(213, 184, 117, 0.16);
+}
+
+.closing__regards span {
+  font-family: var(--font-display);
+  font-size: clamp(14px, 3.4vw, 17px);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
 .closing__cta {
   margin-top: 36px;
   display: flex;
@@ -524,6 +547,7 @@ h3 { font-family: var(--font-display); font-size: clamp(24px, 4vw, 34px); font-w
   .timeline__marker { width:64px; }
   .timeline__marker span { width:46px; height:46px; }
   .venue-card__highlight { padding: 18px 16px; }
+  .closing__regards { padding: 12px 22px; }
 }
 
 @media (max-height: 760px) {

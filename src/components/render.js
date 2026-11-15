@@ -323,6 +323,11 @@ export function renderInvitation(config) {
           <p>${escapeHtml(copy.closingBody)}</p>
           <div class="closing__names">${escapeHtml(couple.brideShortName || couple.brideName.split(" ")[0])}<br><span>&amp;</span><br>${escapeHtml(couple.groomShortName || couple.groomName.split(" ")[0])}</div>
           <time>${escapeHtml(wedding.displayDate)}</time>
+          ${copy.bestRegards ? `
+            <div class="closing__regards">
+              <span>${escapeHtml(copy.bestRegards)}</span>
+            </div>
+          ` : ""}
           <div class="closing__cta">
             <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" class="button button--create-yours">
               <svg class="whatsapp-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">

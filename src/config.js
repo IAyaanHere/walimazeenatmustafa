@@ -55,6 +55,7 @@ couple: {
     closingTitle: "We cannot wait to celebrate with you",
     closingBody:
       "May Allah place barakah in this union and fill the journey ahead with love, mercy, and peace.",
+    bestRegards: "Best regards from Shaikh family",
   },
 
   wedding: {
