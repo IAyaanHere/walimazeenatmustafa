@@ -170,7 +170,7 @@ export function renderInvitation(config) {
     ${sections.timeline ? `
       <section class="section timeline-section reveal-on-scroll" id="timeline">
         <div class="section__inner section__inner--narrow">
-          <p class="section-kicker">December 25 · Friday</p>
+          <p class="section-kicker">${escapeHtml(wedding.displayDate)} · ${escapeHtml(wedding.day)}</p>
           <h2>${escapeHtml(copy.timelineTitle)}</h2>
           <div class="timeline">
             ${program.map((item, index) => `
@@ -221,7 +221,7 @@ export function renderInvitation(config) {
     ${sections.preWeddingEvents ? `
       <section class="section events-section reveal-on-scroll" id="events">
         <div class="section__inner">
-          <p class="section-kicker">Before the Nikah</p>
+          <p class="section-kicker">Before the Walima</p>
           <h2>${escapeHtml(copy.preWeddingTitle)}</h2>
           <div class="event-grid">
             ${preWeddingEvents.map((event) => `
@@ -280,7 +280,7 @@ export function renderInvitation(config) {
               <legend>Events attending</legend>
               <div class="check-grid">
                 ${preWeddingEvents.map((event) => `<label class="check"><input type="checkbox" name="events" value="${escapeHtml(event.title)}" /><span>${escapeHtml(event.title)}</span></label>`).join("")}
-                <label class="check"><input type="checkbox" name="events" value="Nikah & Reception" checked /><span>Nikah & Reception</span></label>
+                <label class="check"><input type="checkbox" name="events" value="Walima Reception" checked /><span>Walima Reception</span></label>
               </div>
             </fieldset>
 
@@ -316,6 +316,13 @@ export function renderInvitation(config) {
           <p class="closing__arabic"></p>
           <h2>${escapeHtml(copy.closingTitle)}</h2>
           <p>${escapeHtml(copy.closingBody)}</p>
+          ${copy.closingCard ? `
+            <div class="closing-card">
+              <p class="closing-card__date">${escapeHtml(copy.closingCard.date)}</p>
+              <h3 class="closing-card__title">${escapeHtml(copy.closingCard.title)}</h3>
+              <p class="closing-card__text">${escapeHtml(copy.closingCard.text)}</p>
+            </div>
+          ` : ""}
           <div class="closing__names">${escapeHtml(couple.brideShortName || couple.brideName.split(" ")[0])}<br><span>&amp;</span><br>${escapeHtml(couple.groomShortName || couple.groomName.split(" ")[0])}</div>
           <time>${escapeHtml(wedding.displayDate)}</time>
           <div class="closing__cta">

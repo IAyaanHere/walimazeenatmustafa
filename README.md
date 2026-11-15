@@ -1,4 +1,4 @@
-# Noor Invites - Zoya & Zaid Nikah
+# Noor Invites - Zeenat & Mustafa Walima
 
 A beautiful, cinematic, and fully localized frontend invitation template.
 

@@ -5,29 +5,29 @@
  */
 export const weddingConfig = {
   meta: {
-    templateName: "Noor Cinematic Nikah",
-    slug: "fatima-and-ibrahim",
+    templateName: "Noor Cinematic Walima",
+    slug: "zeenat-and-mustafa",
     language: "en",
     passwordProtected: false,
   },
 
 couple: {
-  brideName: "Zoya Khan",
-  brideShortName: "Zoya",
-  brideParents: "Daughter of Rashid Khan & Farida Begum",
+  brideName: "Zeenat Shaikh",
+  brideShortName: "Zeenat",
+  brideParents: "Daughter of Zamir Shaikh & Nazima Shaikh",
 
-  groomName: "Shaikh Zaid",
-  groomShortName: "Zaid",
-  groomParents: "Son of Shaikh Tariq & Shabana Begum",
+  groomName: "Mustafa Rationwala",
+  groomShortName: "Mustafa",
+  groomParents: "Son of Ahmed Rationwala & Mehajabin Rationwala",
 
-  monogram: "Z · Z",
+  monogram: "Z · M",
 },
 
   copy: {
     tapToOpen: "Tap to open",
     openingKicker: "An invitation filled with joy and barakah",
     heroBismillah: "﷽",
-    heroIntroLineOne: "We request the honour of your presence at the Nikah of",
+    heroIntroLineOne: "We request the honour of your presence at the Walima reception of",
 
     heroIntroLineTwo: "",
 
@@ -35,15 +35,15 @@ couple: {
 
     heroClosingLine: "as they begin their journey of love, faith, and togetherness.",
     invitation:
-      "In the name of Allah, the Most Gracious, the Most Merciful. With gratitude to Allah and joy in our hearts, together with our families, we invite you to witness and celebrate our Nikah.",
+      "In the name of Allah, the Most Gracious, the Most Merciful. With gratitude to Allah and joy in our hearts, together with our families, we invite you to witness and celebrate the Walima ceremony of Zeenat and Mustafa.",
     welcomeTitle: "With joyful hearts",
     welcomeBody:
-      "Zoya and Zaid are honoured to welcome you as they begin a new chapter together. Your presence, prayers, and blessings will make this celebration even more meaningful.",
+      "Zeenat and Mustafa are honoured to welcome you as they begin a new chapter together. Your presence, prayers, and blessings will make this celebration even more meaningful.",
     dateIntro: "A beautiful day awaits",
     datePrompt: "Scratch to reveal",
     dateRevealed: "Our forever begins",
     galleryTitle: "A glimpse of our journey",
-    countdownTitle: "Counting down to our Nikah",
+    countdownTitle: "Counting down to the Walima",
     timelineTitle: "The celebration",
     venueTitle: "Where we will celebrate",
     dressCodeTitle: "Dress code",
@@ -56,18 +56,23 @@ couple: {
     closingTitle: "We cannot wait to celebrate with you",
     closingBody:
       "May Allah place barakah in this union and fill the journey ahead with love, mercy, and peace.",
+    closingCard: {
+      date: "FRIDAY, DEC 25, 2026",
+      title: "WALIMA RECEPTION",
+      text: "Hamvi Hall mein dawat-e-shukrana, InshaAllah aap sab ko hai aana. Mohabbat, barkat, aur khushi ke saath Manayenge hum naya rishta, naya jazbaat.",
+    },
   },
 
   wedding: {
-    isoDateTime: "2026-12-25T18:30:00+05:30",
+    isoDateTime: "2026-12-25T19:30:00+05:30",
     timezone: "Asia/Kolkata",
     displayDate: "December 25, 2026",
     day: "Friday",
-    time: "6:30 PM",
-    endIsoDateTime: "2026-12-25T22:00:00+05:30",
-    calendarTitle: "Nikah of Zoya & Zaid",
+    time: "7:30 PM",
+    endIsoDateTime: "2026-12-25T23:30:00+05:30",
+    calendarTitle: "Walima of Zeenat & Mustafa",
     calendarDescription:
-      "With gratitude to Allah, please join us to witness and celebrate the Nikah of Zoya and Zaid.",
+      "With gratitude to Allah, please join us to witness and celebrate the Walima reception of Zeenat and Mustafa.",
   },
 
   media: {
@@ -96,11 +101,11 @@ couple: {
 },
 
   venue: {
-    name: "Noor Invites",
-    address: "Mahal, Nagpur",
+    name: "Hamvi Hall (The Grand Hamvi Garden)",
+    address: "Veera Desai Road, Jogeshwari (West), Mumbai",
     mapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=Mahal%2C+Nagpur",
-    note: "Please arrive 30 minutes before the Nikah ceremony.",
+      "https://www.google.com/maps/search/?api=1&query=Hamvi+Hall+The+Grand+Hamvi+Garden+Veera+Desai+Road+Jogeshwari+West+Mumbai",
+    note: "Hamvi Hall mein dawat-e-shukrana, InshaAllah aap sab ko hai aana.",
   },
 
   dressCode: {
@@ -128,11 +133,10 @@ couple: {
   ],
 
   program: [
-    { time: "6:00 PM", title: "Guest arrival", detail: "Welcome refreshments" },
-    { time: "6:30 PM", title: "Nikah ceremony", detail: "The marriage solemnisation" },
-    { time: "7:15 PM", title: "Dua & greetings", detail: "Blessings and family photographs" },
-    { time: "8:00 PM", title: "Dinner", detail: "A celebratory feast" },
-    { time: "9:30 PM", title: "Farewell", detail: "With gratitude and warm wishes" },
+    { time: "7:30 PM", title: "Guest arrival", detail: "Welcome drinks & refreshments" },
+    { time: "8:30 PM", title: "Walima reception", detail: "Greetings and photographs with the couple" },
+    { time: "9:30 PM", title: "Celebratory feast", detail: "Dinner is served" },
+    { time: "11:30 PM", title: "Farewell & duas", detail: "With warm memories and gratitude" },
   ],
 
   rsvp: {
@@ -159,7 +163,7 @@ couple: {
     timeline: true,
     venue: true,
     dressCode: true,
-    preWeddingEvents: true,
+    preWeddingEvents: false,
     gifts: true,
     rsvp: false,
     closing: true,
