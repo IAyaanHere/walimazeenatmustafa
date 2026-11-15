@@ -189,4 +189,10 @@ couple: {
     },
     revealEffect: "gold-petals",
   },
+
+  creator: {
+    whatsappNumber: "919449541723",
+    whatsappMessage: "Hello! I saw the Zeenat & Mustafa wedding invitation and would like to create one.",
+    instagram: "https://www.instagram.com/noor.invites.nagpur/",
+  },
 };
