@@ -198,7 +198,11 @@ export function renderInvitation(config) {
             <h2>${escapeHtml(copy.venueTitle)}</h2>
             <h3>${escapeHtml(venue.name)}</h3>
             <address>${escapeHtml(venue.address)}</address>
-            <p>${escapeHtml(venue.note)}</p>
+            ${venue.note ? `
+              <div class="venue-card__highlight">
+                <p>${escapeHtml(venue.note)}</p>
+              </div>
+            ` : ""}
             <a class="button button--light" href="${escapeHtml(venue.mapsUrl)}" target="_blank" rel="noreferrer">View on Google Maps ↗</a>
           </div>
         </div>
@@ -244,7 +248,7 @@ export function renderInvitation(config) {
         <div class="section__inner section__inner--narrow">
           <div class="gift-icon" aria-hidden="true">♡</div>
           <h2>${escapeHtml(copy.giftsTitle)}</h2>
-          <p class="lead">${escapeHtml(copy.giftsBody)}</p>
+          ${copy.giftsBody ? `<p class="lead">${escapeHtml(copy.giftsBody)}</p>` : ""}
         </div>
       </section>
     ` : ""}
@@ -317,13 +321,6 @@ export function renderInvitation(config) {
           <p class="closing__arabic"></p>
           <h2>${escapeHtml(copy.closingTitle)}</h2>
           <p>${escapeHtml(copy.closingBody)}</p>
-          ${copy.closingCard ? `
-            <div class="closing-card">
-              <p class="closing-card__date">${escapeHtml(copy.closingCard.date)}</p>
-              <h3 class="closing-card__title">${escapeHtml(copy.closingCard.title)}</h3>
-              <p class="closing-card__text">${escapeHtml(copy.closingCard.text)}</p>
-            </div>
-          ` : ""}
           <div class="closing__names">${escapeHtml(couple.brideShortName || couple.brideName.split(" ")[0])}<br><span>&amp;</span><br>${escapeHtml(couple.groomShortName || couple.groomName.split(" ")[0])}</div>
           <time>${escapeHtml(wedding.displayDate)}</time>
           <div class="closing__cta">

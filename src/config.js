@@ -49,18 +49,12 @@ couple: {
     dressCodeTitle: "Dress code",
     preWeddingTitle: "The festivities begin",
     giftsTitle: "Your presence is our present",
-    giftsBody:
-      "Your love, duas, blessings, and presence are the greatest gifts we could ever ask for. We feel truly grateful to celebrate this special day with you.",
+    giftsBody: "",
     rsvpTitle: "Will you be joining us?",
     rsvpSubtitle: "Kindly respond by December 10, 2026.",
     closingTitle: "We cannot wait to celebrate with you",
     closingBody:
       "May Allah place barakah in this union and fill the journey ahead with love, mercy, and peace.",
-    closingCard: {
-      date: "FRIDAY, DEC 25, 2026",
-      title: "WALIMA RECEPTION",
-      text: "Hamvi Hall mein dawat-e-shukrana, InshaAllah aap sab ko hai aana. Mohabbat, barkat, aur khushi ke saath Manayenge hum naya rishta, naya jazbaat.",
-    },
   },
 
   wedding: {
@@ -105,7 +99,7 @@ couple: {
     address: "Veera Desai Road, Jogeshwari (West), Mumbai",
     mapsUrl:
       "https://www.google.com/maps/search/?api=1&query=Hamvi+Hall+The+Grand+Hamvi+Garden+Veera+Desai+Road+Jogeshwari+West+Mumbai",
-    note: "Hamvi Hall mein dawat-e-shukrana, InshaAllah aap sab ko hai aana.",
+    note: "Hamvi Hall mein dawat-e-shukrana, InshaAllah aap sab ko hai aana. Mohabbat, barkat, aur khushi ke saath Manayenge hum naya rishta, naya jazbaat.",
   },
 
   dressCode: {
@@ -162,7 +156,7 @@ couple: {
     countdown: true,
     timeline: true,
     venue: true,
-    dressCode: true,
+    dressCode: false,
     preWeddingEvents: false,
     gifts: true,
     rsvp: false,
