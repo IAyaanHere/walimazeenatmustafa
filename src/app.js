@@ -31,7 +31,7 @@ root.style.setProperty(
   config.theme.fonts.body
 );
 
-document.title = `${config.couple.brideShortName || config.couple.brideName.split(" ")[0]} & ${config.couple.groomShortName || config.couple.groomName.split(" ")[0]} | Walima Invitation`;
+document.title = `${config.couple.brideShortName || config.couple.brideName.split(" ")[0]} & ${config.couple.groomShortName || config.couple.groomName.split(" ")[0]} | Walima Ceremony`;
 
 document.addEventListener("contextmenu", (event) => {
   event.preventDefault();

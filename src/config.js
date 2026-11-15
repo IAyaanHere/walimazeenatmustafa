@@ -27,7 +27,7 @@ couple: {
     tapToOpen: "Tap to open",
     openingKicker: "An invitation filled with joy and barakah",
     heroBismillah: "﷽",
-    heroIntroLineOne: "We request the honour of your presence at the Walima reception of",
+    heroIntroLineOne: "We request the honour of your presence at the Walima ceremony of",
 
     heroIntroLineTwo: "",
 
