@@ -73,7 +73,7 @@ couple: {
   media: {
     introVideo: "./assets/video/intro-placeholder1.mp4",
     introPoster: "./assets/video/intro-poster.webp",
-    backgroundMusic: "./assets/audio/bismillah.mp3",
+    backgroundMusic: "./assets/audio/teri-ore.mp3",
     gallery: [
       { src: "./assets/gallery/gallery-01.jpg", alt: "Gallery placeholder one" },
       { src: "./assets/gallery/gallery-02.jpg", alt: "Gallery placeholder two" },
